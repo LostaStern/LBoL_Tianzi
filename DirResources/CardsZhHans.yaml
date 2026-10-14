@@ -88,7 +88,7 @@ TianziScarletCharge:
 TianziSkyCleave:
   Name: 天穹斩
   Description: |-
-    造成 {Damage} 点伤害 {Value2} 次。
+    造成 {Damage} 点伤害 |2| 次。
     施加 {Value1} 回合|虚弱|。
 
 TianziSkywardStrike:
@@ -571,3 +571,10 @@ TianziKarmaShackle:
     打出与此牌相邻的一张手牌时，另一侧相邻牌获得|禁止|；本回合结束时移除因此添加的|禁止|。
   PreventUsageMessage: 因果枷锁限制了相邻牌。
   FlavorText: 凭空而生的枷锁本质也是“因果”带来的必然，就如同远古时代最强大的狩猎者也必将化作化石一般，早已注定……
+
+TianziUnthinkableMaiden:
+  Name: 非想非非想天之女
+  Description: |-
+    获得 {Shield} 点|护盾|。
+    下回合释放一种|天气|，持续 {Value1} 回合。
+    从|比那名居天子|的卡池中随机选取 {Value2} 张普通或罕见的卡牌，选择其中一张加入牌库。

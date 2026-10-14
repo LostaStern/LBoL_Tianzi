@@ -573,3 +573,10 @@ TianziKarmaShackle:
     打出與此牌相鄰的一張手牌時，另一側相鄰牌獲得|禁止|；本回合結束時移除因此添加的|禁止|。
   PreventUsageMessage: 因果枷鎖限制了相鄰牌。
   FlavorText: 憑空而生的枷鎖本質也是“因果”帶來的必然，就如同遠古時代最強大的狩獵者也必將化作化石一般，早已註定……
+
+TianziUnthinkableMaiden:
+  Name: 非想非非想天之女
+  Description: |-
+    獲得 {Shield} 點|護盾|。
+    下回合釋放一種|天氣|，持續 {Value1} 回合。
+    從|比那名居天子|的卡池中隨機選取 {Value2} 張普通或罕見的卡牌，選擇其中一張加入牌庫。

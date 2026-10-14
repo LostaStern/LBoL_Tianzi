@@ -40,9 +40,6 @@ namespace TianziMod.Cards
             config.UpgradedShield = 8;
             config.Value1 = 1; // 最多放逐张数
 
-            config.Keywords = Keyword.Exile;
-            config.UpgradedKeywords = Keyword.Exile;
-
             config.Illustrator = "鱼鱼鱼鱼花";
             config.RelativeKeyword = Keyword.Shield | Keyword.Exile;
             config.UpgradedRelativeKeyword = Keyword.Shield | Keyword.Exile;

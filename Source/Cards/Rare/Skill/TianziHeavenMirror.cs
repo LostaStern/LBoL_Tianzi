@@ -31,7 +31,7 @@ namespace TianziMod.Cards
             config.Type = CardType.Skill;
             config.TargetType = TargetType.Self;
 
-            config.Keywords = Keyword.Exile | Keyword.Echo;
+            config.Keywords = Keyword.Exile;
             config.UpgradedKeywords = Keyword.Exile | Keyword.Echo;
 
             config.Illustrator = "亜音";

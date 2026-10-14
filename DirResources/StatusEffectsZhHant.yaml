@@ -15,7 +15,7 @@ TianziRegenSe:
 TianziWeatherClear:
   Name: 快晴
   Description: |-
-    獲得本效果時，獲得一層|閃避|，並隨機獲得一點{OwnerName}的基礎法力顏色的費用。
+    獲得本效果時，獲得|1|層|閃避|，並隨機獲得|1|點{OwnerName}的基礎法力顏色的費用。
     {OwnerName}的|閃避|不會在回合開始時消失。
   Brief: "獲得本效果時獲得若干層|閃避|與若干點基礎色法力；|閃避|不會在回合開始時消失。"
 
@@ -28,13 +28,13 @@ TianziWeatherMist:
 TianziWeatherCloud:
   Name: 雲天
   Description: |-
-    本效果存在時，每打出一張牌，獲得一點無色法力。
+    本效果存在時，每打出1張牌，獲得|1點無色法力。
   Brief: "每打出一張牌獲得若干點無色法力。"
 
 TianziWeatherAzure:
   Name: 蒼天
   Description: |-
-    回合結束時，{OwnerName}獲得七點<sprite="Point" name="Power">。
+    回合結束時，{OwnerName}獲得7點<sprite="Point" name="Power">。
   Brief: "回合結束時，獲得若干點<sprite=\"Point\" name=\"Power\">。"
 
 TianziWeatherHail:
@@ -65,14 +65,14 @@ TianziWeatherSun:
 TianziPeachBoostSe:
   Name: 仙桃增幅
   Description: |-
-    {OwnerName}獲得|絕壁|時，額外獲得一點|絕壁|。
+    {OwnerName}獲得|絕壁|時，額外獲得1點|絕壁|。
     此能力無法疊加。
   Brief: "獲得|絕壁|時額外增加若干。無法疊加。"
 
 TianziPeachGardenSe:
   Name: 漫漫桃源
   Description: |-
-    {OwnerName}的|絕壁|減少時，獲得一點|絕壁|。
+    {OwnerName}的|絕壁|減少時，獲得1點|絕壁|。
   Brief: "|絕壁|減少時獲得若干點|絕壁|。"
 
 TianziScarletRadianceSe:
@@ -130,20 +130,20 @@ TianziWeatherForecastSe:
 TianziMeditationSe:
   Name: 一念
   Description: |-
-    {OwnerName}每回合多抽一張牌；
-    回合開始時，可將一張手牌與棄牌堆內的一張牌互換。
+    {OwnerName}每回合多抽1張牌；
+    回合開始時，可將1張手牌與棄牌堆內的1張牌互換。
   Brief: "每回合多抽若干張；可互換手牌與棄牌堆。"
 TianziEnduranceSe:
   Name: 天人的耐性
   Description: |-
-    {OwnerName}回合開始時獲得十點|格擋|，
-    並獲得一點|靈力|（最多累計三點）。
+    {OwnerName}回合開始時獲得10點|格擋|，
+    並獲得1點|靈力|（最多累計3點）。
   Brief: 回合開始獲得若干格擋及|靈力|。
 TianziPureWishSe:
   Name: 清霖之願
   Description: |-
     {OwnerName}每回合前 {Level} 次（剩餘 {Count} 次）抽到厄運或狀態牌時，
-    將其放逐並抽一張牌；|庇護|觸發時本效果也會生效。
+    將其放逐並抽|1|張牌；|庇護|觸發時本效果也會生效。
     此能力無法疊加。
   Brief: "每回合前 {Level} 次（剩 {Count}）放逐厄運/狀態並補抽。無法疊加。"
 
@@ -151,14 +151,14 @@ TianziHeavenShieldSe:
   Name: 天界之庇護
   Description: |-
     {OwnerName}的回合開始時獲得{Mana}。
-    {OwnerName}的回合結束時獲得一層|庇護|。
+    {OwnerName}的回合結束時獲得|1|層|庇護|。
     此能力無法疊加。
   Brief: "回合開始獲得{Mana}，回合結束獲得|庇護|。無法疊加。"
 
 TianziMortalJourneySe:
   Name: 凡間之遊
   Description: |-
-    {OwnerName}每打出 {Level} 張牌，獲得{Mana}並抽一張牌。
+    {OwnerName}每打出 {Level} 張牌，獲得{Mana}並抽|1|張牌。
     還需打出 {Count} 張牌。
     此能力無法疊加。
   Brief: "還需 {Count}/{Level} 張牌觸發。無法疊加。"
@@ -166,7 +166,7 @@ TianziMortalJourneySe:
 TianziPeachTalismanSe:
   Name: 桃符「固若金湯的仙桃」
   Description: |-
-    每四個回合，{OwnerName}獲得一回合|天衣無縫|，
+    每四個回合，{OwnerName}獲得|1|回合|天衣無縫|，
     並立即獲得 {Level} 點|絕壁|。
   Brief: "每若干回合獲得|天衣無縫|與|絕壁|。"
 
@@ -174,7 +174,7 @@ TianziHeavenlyTempoSe:
   Name: 天人永不落俗
   Description: |-
     奇數回合開始時獲得 {Count} 點|火力|。
-    偶數回合開始時獲得當前|火力|的 {Level} 倍|格擋|（至多二十五點）。
+    偶數回合開始時獲得當前|火力|的 {Level} 倍|格擋|（至多25點）。
   Brief: 奇數|火力|，偶數|格擋|至多若干。
 TianziPeachEternitySe:
   Name: “野生桃奶”
@@ -192,9 +192,9 @@ TianziScarletChargeSe:
 TianziPeachReserveSe:
   Name: 桃儲
   Description: |-
-    {OwnerName}每回合結束時獲得二點|絕壁|；
+    {OwnerName}每回合結束時獲得|2|點|絕壁|；
     每當累計減少 {Level} 點|絕壁|，獲得 {Count} 點|格擋|並抽一張牌。
-    每回合最多觸發二次。
+    每回合最多觸發|2|次。
   Brief: 回合結束獲得|絕壁|；|絕壁|減少時反哺|格擋|。
 
 TianziNextTurnPhilSe:
@@ -204,7 +204,7 @@ TianziNextTurnPhilSe:
 
 TianziDoubleAttackSe:
   Name: 三倍度反
-  Description: "本回合下一張攻擊牌造成原來的二倍的傷害。"
+  Description: "本回合下|1|張攻擊牌造成原來的|2|倍的傷害。"
   Brief: "下一張攻擊造成原來的若干倍傷害。"
 
 TianziShrugSe:
@@ -221,7 +221,7 @@ TianziHardshipRetainSe:
 
 TianziProbeSe:
   Name: 氣質探查
-  Description: "{OwnerName}每打出一張|奇偶數|牌，抽一張牌。"
+  Description: "{OwnerName}每打出一張|奇偶數|牌，抽|1|張牌。"
   Brief: 打出奇偶牌時抽牌。
 
 TianziEarthDelaySe:
@@ -231,13 +231,13 @@ TianziEarthDelaySe:
 
 TianziFeastSe:
   Name: 慶功宴
-  Description: "每當一名敵人被打敗，恢復二點生命值，獲得{Mana}並抽一張牌。"
+  Description: "每當|1|名敵人被打敗，恢復|2|點生命值，獲得{Mana}並抽1張牌。"
   Brief: 擊殺回血、得費、抽牌。
 
 TianziReflectSe:
   Name: 境界對決
   Description: 完全抵擋下 {Level} 次敵人攻擊造成的生命損失，並原額返還。
-  Brief: 抵擋並返還下一次攻擊。
+  Brief: 抵擋並返還下1次攻擊。
 
 TianziGraceSe:
   Name: 有頂天的恩寵
@@ -258,12 +258,12 @@ TianziBossPeachSe:
 
 TianziBossHeavenQiSe:
   Name: 天人之氣
-  Description: 回合結束時，負面狀態失去二層而不是一層。
+  Description: 回合結束時，負面狀態失去|2|層而不是|1|層。
   Brief: 回合結束時，負面狀態額外失去層數。
 
 TianziBossKarmaInfluenceSe:
   Name: 因果影響
   Description: |-
     主角每打出 {Level} 張牌時（進度 {Count}/{Level}）：
-    這張牌從左數第奇數張：隨機失去一點費用；第偶數張：隨機棄一張牌。
+    這張牌從左數第奇數張：隨機失去|1|點費用；第偶數張：隨機棄|1|張牌。
   Brief: 每打出 {Level} 張牌，按這張牌的奇偶位置懲罰。

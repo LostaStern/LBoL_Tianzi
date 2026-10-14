@@ -15,7 +15,7 @@ TianziRegenSe:
 TianziWeatherClear:
   Name: 快晴
   Description: |-
-    获得本效果时，获得一层|闪避|，并随机获得一点{OwnerName}的基础法力颜色的费用。
+    获得本效果时，获得1层|闪避|，并随机获得一点{OwnerName}的基础法力颜色的费用。
     {OwnerName}的|闪避|不会在回合开始时消失。
   Brief: "获得本效果时获得若干层|闪避|与若干点基础色法力；|闪避|不会在回合开始时消失。"
 
@@ -28,13 +28,13 @@ TianziWeatherMist:
 TianziWeatherCloud:
   Name: 云天
   Description: |-
-    本效果存在时，每打出一张牌，获得一点无色法力。
+    本效果存在时，每打出1张牌，获得1点无色法力。
   Brief: "每打出一张牌获得若干点无色法力。"
 
 TianziWeatherAzure:
   Name: 苍天
   Description: |-
-    回合结束时，{OwnerName}获得七点<sprite="Point" name="Power">。
+    回合结束时，{OwnerName}获得7点<sprite="Point" name="Power">。
   Brief: "回合结束时，获得若干点<sprite=\"Point\" name=\"Power\">。"
 
 TianziWeatherHail:
@@ -65,14 +65,14 @@ TianziWeatherSun:
 TianziPeachBoostSe:
   Name: 仙桃增幅
   Description: |-
-    {OwnerName}获得|绝壁|时，额外获得一点|绝壁|。
+    {OwnerName}获得|绝壁|时，额外获得1点|绝壁|。
     此能力无法叠加。
   Brief: "获得|绝壁|时额外增加若干。无法叠加。"
 
 TianziPeachGardenSe:
   Name: 漫漫桃源
   Description: |-
-    {OwnerName}的|绝壁|减少时，获得一点|绝壁|。
+    {OwnerName}的|绝壁|减少时，获得1点|绝壁|。
   Brief: "|绝壁|减少时获得若干点|绝壁|。"
 
 TianziScarletRadianceSe:
@@ -130,20 +130,20 @@ TianziWeatherForecastSe:
 TianziMeditationSe:
   Name: 一念
   Description: |-
-    {OwnerName}每回合多抽一张牌；
+    {OwnerName}每回合多抽1张牌；
     回合开始时，可将一张手牌与弃牌堆内的一张牌互换。
   Brief: "每回合多抽若干张；可互换手牌与弃牌堆。"
 TianziEnduranceSe:
   Name: 天人的耐性
   Description: |-
-    {OwnerName}回合开始时获得十点|格挡|，
-    并获得一点|灵力|（最多累计三点）。
+    {OwnerName}回合开始时获得|10|点|格挡|，
+    并获得|1|点|灵力|（最多累计3点）。
   Brief: 回合开始获得若干格挡和|灵力|。
 TianziPureWishSe:
   Name: 清霖之愿
   Description: |-
     {OwnerName}每回合前 {Level} 次（剩余 {Count} 次）抽到厄运或状态牌时，
-    将其放逐并抽一张牌；|庇护|触发时本效果也会生效。
+    将其放逐并抽1张牌；|庇护|触发时本效果也会生效。
     此能力无法叠加。
   Brief: "每回合前 {Level} 次（剩 {Count}）放逐厄运/状态并补抽。无法叠加。"
 
@@ -151,14 +151,14 @@ TianziHeavenShieldSe:
   Name: 天界之庇护
   Description: |-
     {OwnerName}的回合开始时获得{Mana}。
-    {OwnerName}的回合结束时获得一层|庇护|。
+    {OwnerName}的回合结束时获得|1|层|庇护|。
     此能力无法叠加。
   Brief: "回合开始获得{Mana}，回合结束获得|庇护|。无法叠加。"
 
 TianziMortalJourneySe:
   Name: 凡间之游
   Description: |-
-    {OwnerName}每打出 {Level} 张牌，获得{Mana}并抽一张牌。
+    {OwnerName}每打出 {Level} 张牌，获得{Mana}并抽|1|张牌。
     还需打出 {Count} 张牌。
     此能力无法叠加。
   Brief: "还需 {Count}/{Level} 张牌触发。无法叠加。"
@@ -166,7 +166,7 @@ TianziMortalJourneySe:
 TianziPeachTalismanSe:
   Name: 桃符「固若金汤的仙桃」
   Description: |-
-    每四个回合，{OwnerName}获得一回合|天衣无缝|，
+    每四个回合，{OwnerName}获得|1|回合|天衣无缝|，
     并立即获得 {Level} 点|绝壁|。
   Brief: "每若干回合获得|天衣无缝|与|绝壁|。"
 
@@ -174,7 +174,7 @@ TianziHeavenlyTempoSe:
   Name: 天人永不落俗
   Description: |-
     奇数回合开始时获得 {Count} 点|火力|。
-    偶数回合开始时获得当前|火力|的 {Level} 倍|格挡|（至多二十五点）。
+    偶数回合开始时获得当前|火力|的 {Level} 倍|格挡|（至多25点）。
   Brief: 奇数|火力|，偶数|格挡|至多若干。
 TianziPeachEternitySe:
   Name: “野生桃奶”
@@ -192,9 +192,9 @@ TianziScarletChargeSe:
 TianziPeachReserveSe:
   Name: 桃储
   Description: |-
-    {OwnerName}每回合结束时获得二点|绝壁|；
+    {OwnerName}每回合结束时获得|2|点|绝壁|；
     每当累计减少 {Level} 点|绝壁|，获得 {Count} 点|格挡|并抽一张牌。
-    每回合最多触发二次。
+    每回合最多触发|2|次。
   Brief: 回合结束获得|绝壁|；|绝壁|减少时反哺|格挡|。
 
 TianziNextTurnPhilSe:
@@ -204,7 +204,7 @@ TianziNextTurnPhilSe:
 
 TianziDoubleAttackSe:
   Name: 三倍度反
-  Description: "本回合下一张攻击牌造成原来的二倍的伤害。"
+  Description: "本回合下一张攻击牌造成原来的|2|倍的伤害。"
   Brief: "下一张攻击造成原来的若干倍伤害。"
 
 TianziShrugSe:
@@ -221,7 +221,7 @@ TianziHardshipRetainSe:
 
 TianziProbeSe:
   Name: 气质探查
-  Description: "{OwnerName}每打出一张|奇偶数|牌，抽一张牌。"
+  Description: "{OwnerName}每打出一张|奇偶数|牌，抽|1|张牌。"
   Brief: 打出奇偶牌时抽牌。
 
 TianziEarthDelaySe:
@@ -231,7 +231,7 @@ TianziEarthDelaySe:
 
 TianziFeastSe:
   Name: 庆功宴
-  Description: "每当一名敌人被打败，恢复二点生命值，获得{Mana}并抽一张牌。"
+  Description: "每当1名敌人被打败，恢复|2|点生命值，获得{Mana}并抽|1|张牌。"
   Brief: 击杀回血、得费、抽牌。
 
 TianziReflectSe:
@@ -258,12 +258,12 @@ TianziBossPeachSe:
 
 TianziBossHeavenQiSe:
   Name: 天人之气
-  Description: 回合结束时，负面状态失去二层而不是一层。
+  Description: 回合结束时，负面状态失去|2|层而不是|1|层。
   Brief: 回合结束时，负面状态额外失去层数。
 
 TianziBossKarmaInfluenceSe:
   Name: 因果影响
   Description: |-
     主角每打出 {Level} 张牌时（进度 {Count}/{Level}）：
-    这张牌从左数第奇数张：随机失去一点费用；第偶数张：随机弃一张牌。
+    这张牌从左数第奇数张：随机失去|1|点费用；第偶数张：随机弃|1|张牌。
   Brief: 每打出 {Level} 张牌，按这张牌的奇偶位置惩罚。

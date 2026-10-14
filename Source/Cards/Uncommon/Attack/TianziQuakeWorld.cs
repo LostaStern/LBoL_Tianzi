@@ -36,6 +36,7 @@ namespace TianziMod.Cards
             config.Illustrator = "かすおかすと";
             config.Index = CardIndexGenerator.GetUniqueIndex(config);
             config.Keywords = Keyword.Accuracy;
+            config.UpgradedKeywords = Keyword.Accuracy;
             return config;
         }
     }

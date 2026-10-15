@@ -25,7 +25,7 @@ TianziMushin:
   Description: |-
     |占卜| {Scry}。
     获得 {Block} 点|格挡|。
-    抽取抽牌堆顶的一张牌，可选择打出或|放逐|。
+    抽取抽牌堆顶的|n:1|张牌，可选择打出或|放逐|。
 
 TianziBodyAsShield:
   Name: 以身为盾
@@ -42,15 +42,15 @@ TianziHeavenStepGuard:
   Description: |-
     获得 {Block} 点|格挡|。
     手牌张数为奇数时，获得 {Value1} 点|绝壁|。
-    手牌张数为偶数时，抽|1|张牌。
+    手牌张数为偶数时，抽|n:1|张牌。
   ExtraDescription1: |-
     获得 {Block} 点|格挡|。
     手牌张数为奇数时，获得 {Value1} 点|绝壁|。
-    |d:手牌张数为偶数时，抽|1|张牌。|
+    |d:手牌张数为偶数时，抽|n:1|张牌。|
   ExtraDescription2: |-
     获得 {Block} 点|格挡|。
     |d:手牌张数为奇数时，获得 {Value1} 点绝壁。|
-    手牌张数为偶数时，抽|1|张牌。
+    手牌张数为偶数时，抽|n:1|张牌。
 
 TianziWeatherWatch:
   Name: 天气观测
@@ -69,15 +69,15 @@ TianziScarletFlash:
   Description: |-
     造成 {Damage} 点伤害。
     手牌张数为奇数时，伤害提升至 {Value1} 点。
-    手牌张数为偶数时，获得{Mana}。
+    手牌张数为偶数时，获得|n:5|点|格挡|。
   ExtraDescription1: |-
     造成 {Damage} 点伤害。
     手牌张数为奇数时，伤害提升至 {Value1} 点。
-    |d:手牌张数为偶数时，获得{Mana}。|
+    |d:手牌张数为偶数时，获得5点格挡。|
   ExtraDescription2: |-
     造成 {Damage} 点伤害。
     |d:手牌张数为奇数时，伤害提升至 {Value1} 点。|
-    手牌张数为偶数时，获得{Mana}。
+    手牌张数为偶数时，获得|n:5|点|格挡|。
 
 TianziScarletCharge:
   Name: 绯想之剑充能
@@ -88,7 +88,7 @@ TianziScarletCharge:
 TianziSkyCleave:
   Name: 天穹斩
   Description: |-
-    造成 {Damage} 点伤害 |2| 次。
+    造成 {Damage} 点伤害 |n:2| 次。
     施加 {Value1} 回合|虚弱|。
 
 TianziSkywardStrike:
@@ -107,7 +107,7 @@ TianziSecondSlash:
   Name: 再斩
   Description: |-
     造成 {Damage} 点伤害。
-    若目标拥有|格挡|或|护盾|，造成原来的|2倍|的伤害。
+    若目标拥有|格挡|或|护盾|，造成原来的|n:2|倍的伤害。
 
 TianziTemperamentSword:
   Name: 气质之剑
@@ -143,15 +143,15 @@ TianziPeachNectar:
 TianziPeachReserve:
   Name: 仙桃储备
   Description: |-
-    |回合结束时|：如果{SelfName}在手牌中，获得|2|点|绝壁|。
-    |回合开始时|：如果{SelfName}在手牌中，上回合每减少 {Value1} 点|绝壁|，获得 {Value2} 点|格挡|并抽|1|张牌，一回合最多生效|2|次。
+    |回合结束时|：如果{SelfName}在手牌中，获得|n:1|点|绝壁|。
+    |回合开始时|：如果{SelfName}在手牌中，上回合每减少 {Value1} 点|绝壁|，获得 {Value2} 点|格挡|并抽|n:1|张牌，一回合最多生效|n:2|次。
   FlavorText: 她把仙桃掰成小块收进袖子里，说是路上万一饿了可以垫一垫。
 
 TianziBlazingSword:
   Name: 气焰万丈之剑
   Description: |-
     造成 {Damage} 点伤害。
-    每额外支付1点法力，攻击次数增加 1。
+    每额外支付1点法力，攻击次数增加|n:1|。
 TianziGrowingBraver:
   Name: 绯焰镭射
   Description: |-
@@ -162,7 +162,7 @@ TianziMeteorPlunge:
   Name: 坠入大气圈
   Description: |-
     对所有敌人造成 {Damage} 点伤害。
-    再对所有敌人造成一次{PlayerName}的|绝壁|的|2|倍的伤害。
+    再对所有敌人造成一次{PlayerName}的|绝壁|的|n:2|倍的伤害。
 
 TianziQuakeWorld:
   Name: 一击震乾坤
@@ -180,10 +180,9 @@ TianziOverwhelming:
 TianziDanceSword:
   Name: 环舞之剑
   Description: |-
-    立刻扣除一点{Mana1}。
     造成 {Damage} 点伤害。
     施加 {Value1} 回合|虚弱|。
-    抽一张牌，下回合获得{Mana}；若未能扣除法力则不会获得费用。
+    抽|n:1|张牌，下回合开始时获得{Mana}。
 
 TianziLandLiquefy:
   Name: 大地液化
@@ -194,42 +193,29 @@ TianziLandLiquefy:
 TianziKeystoneStorm:
   Name: 天罚的石柱
   Description: |-
-    对所有敌人造成 {Damage} 点伤害，并施加|1|回合|虚弱|。
+    对所有敌人造成 {Damage} 点伤害，并施加|n:1|回合|虚弱|。
     获得 {Value1} 点|格挡|。若手牌数不少于 3，额外获得 {Value2} 点|格挡|。
 
 TianziScarletExecution:
   Name: 绯色狂想
   Description: |-
     造成 {Damage} 点伤害。
-    手牌张数为奇数时，本回合下一张攻击牌造成原来的|2|倍的伤害。
-    手牌张数为偶数时，抽|3|张牌。
+    手牌张数为奇数时，本回合下一张攻击牌造成原来的|n:2|倍的伤害。
+    手牌张数为偶数时，抽|n:3|张牌。
   ExtraDescription1: |-
     造成 {Damage} 点伤害。
-    手牌张数为奇数时，本回合下一张攻击牌造成原来的|2|倍的伤害。
-    |d:手牌张数为偶数时，抽|3|张牌。|
+    手牌张数为奇数时，本回合下一张攻击牌造成原来的|n:2|倍的伤害。
+    |d:手牌张数为偶数时，抽|n:3|张牌。|
   ExtraDescription2: |-
     造成 {Damage} 点伤害。
-    |d:手牌张数为奇数时，本回合下一张攻击牌造成原来的|2|倍的伤害。|
-    手牌张数为偶数时，抽|3|张牌。
+    |d:手牌张数为奇数时，本回合下一张攻击牌造成原来的|n:2|倍的伤害。|
+    手牌张数为偶数时，抽|n:3|张牌。
 
 TianziHeavenDescent:
-  Name: 天穹崩落
+  Name: 游刃有余
   Description: |-
-    造成 {Damage} 点伤害。
-    消耗所有|绝壁|，对目标造成消耗值的|2|倍的伤害。
-    手牌张数为奇数时，此伤害额外增加 {Value1}。
-    手牌张数为偶数时，获得消耗的|绝壁|等量|护盾|。
-  ExtraDescription1: |-
-    造成 {Damage} 点伤害。
-    消耗所有|绝壁|，对目标造成消耗值的|2|倍的伤害。
-    手牌张数为奇数时，此伤害额外增加 {Value1}。
-    |d:手牌张数为偶数时，获得消耗的绝壁等量护盾。|
-  ExtraDescription2: |-
-    造成 {Damage} 点伤害。
-    消耗所有|绝壁|，对目标造成消耗值的|2|倍的伤害。
-    |d:手牌张数为奇数时，此伤害额外增加 {Value1}。|
-    手牌张数为偶数时，获得消耗的|绝壁|等量|护盾|。
-
+    获得 {Block} 点|格挡|。
+    对所有敌人施加 {Value1} 回合|虚弱|。
 TianziKeystoneArmor:
   Name: 要石覆体
   Description: |-
@@ -240,7 +226,7 @@ TianziClearSky:
   Name: 晴空万里
   Description: |-
     从手牌、抽牌堆和弃牌堆中，选择至多 {Value1} 张牌|放逐|。
-    每|放逐|一张牌，获得 {Shield} 点|护盾|。
+    每|放逐||n:1|张牌，获得 {Shield} 点|护盾|。
 
 TianziHeavenCanopy:
   Name: 有顶天穹
@@ -269,27 +255,27 @@ TianziHeavenlyInstinct:
 TianziHeavenlyRitual:
   Name: 天人的流仪
   Description: |-
-    |占卜| {Scry}。抽一张牌。
-    抽到攻击牌则获得|1|点|火力|；防御牌则获得|1|点|灵力|；
+    |占卜| {Scry}。抽|n:1|张牌。
+    抽到攻击牌则获得|n:1|点|火力|；防御牌则获得|n:1|点|灵力|；
     技能牌则额外抽 {Value1} 张；状态或厄运则将其|放逐|。
 
 TianziHeavenlyWriting:
   Name: 天人落书
   Description: |-
     选择一张手牌|放逐|，抽 {Value1} 张牌。
-    根据|放逐|的牌：攻击随机施加|1|回合|易伤|；防御随机施加|1|回合|虚弱|；
+    根据|放逐|的牌：攻击随机施加|n:1|回合|易伤|；防御随机施加|n:1|回合|虚弱|；
     技能额外抽一张；能力获得 {Value2} 层|庇护|；诅咒或状态将一张|光芒|加入手中。
 
 TianziWeatherMastery:
   Name: 无垢之土
   Description: |-
-    选择|1|张手牌丢弃。获得 {Block} 点|格挡|。
-    选择弃牌堆内至多|1|张牌置于抽牌堆顶。
+    选择|n:1|张手牌丢弃。获得 {Block} 点|格挡|。
+    选择弃牌堆内至多|n:1|张牌置于抽牌堆顶。
     若手牌数量大于 {Value1}，额外获得{Mana}。
 
 TianziScarletRadiance:
   Name: 绯想的威光
-  Description: 每当一张牌被|放逐|，对所有敌人造成 {Value1} 点攻击伤害。
+  Description: 每当|n:1|张牌被|放逐|，对所有敌人造成 {Value1} 点攻击伤害。
 
 TianziScarletWave:
   Name: 绯想剑斩波
@@ -304,38 +290,38 @@ TianziOddEvenQi:
 TianziPeachBoost:
   Name: 仙桃增幅
   Description: |-
-    获得|绝壁|时额外获得|1|点。
+    获得|绝壁|时额外获得|n:1|点。
     立即获得 {Value1} 点|绝壁|。
     此能力无法叠加。
 
 TianziPeachGarden:
   Name: 漫漫桃源
-  Description: "|绝壁|减少时，获得|1|点|绝壁|。"
+  Description: "|绝壁|减少时，获得|n:1|点|绝壁|。"
 
 TianziPureWish:
   Name: 清霖之愿
   Description: |-
-    每回合前 {Value1} 次抽到厄运或状态牌时，将其|放逐|并抽|1|张牌；|庇护|触发时此效果也会生效。
+    每回合前 {Value1} 次抽到厄运或状态牌时，将其|放逐|并抽|n:1|张牌；|庇护|触发时此效果也会生效。
     此能力无法叠加。
 
 TianziHeavenShield:
   Name: 天界之庇护
   Description: |-
     {PlayerName}的回合开始时获得{Mana}。
-    {PlayerName}的回合结束时获得|1|层|庇护|。
+    {PlayerName}的回合结束时获得|n:1|层|庇护|。
     此能力无法叠加。
 
 TianziMeditation:
   Name: 一念
   Description: |-
-    每回合多抽|1|张牌。
-    回合开始时，可将一张手牌与弃牌堆内的|1|张牌互换。
+    每回合多抽|n:1|张牌。
+    回合开始时，可将一张手牌与弃牌堆内的|n:1|张牌互换。
 
 TianziEndurance:
   Name: 天人的耐性
   Description: |-
-    回合开始时获得|10|点|格挡|，
-    并获得|1|点|灵力|（最多累计|3|点）。
+    回合开始时获得|n:1|点|格挡|，
+    并获得|n:1|点|灵力|（最多累计|n:3|点）。
 
 TianziPeachBlossom:
   Name: 因果掌控
@@ -345,17 +331,17 @@ TianziHeavenlyTempo:
   Name: 天人永不落俗
   Description: |-
     {PlayerName}的回合开始时，奇数回合获得 {Value1} 点|火力|；
-    偶数回合获得当前|火力|的 {Value2} 倍|格挡|（至多|25|点）。
+    偶数回合获得当前|火力|的 {Value2} 倍|格挡|（至多|n:25|点）。
   UpgradedDescription: |-
     {PlayerName}的回合开始时，奇数回合获得 {Value1} 点|火力|；
-    偶数回合获得当前|火力|的 {Value2} 倍|格挡|（至多|25|点）。
+    偶数回合获得当前|火力|的 {Value2} 倍|格挡|（至多|n:25|点）。
     多次打出时，火力获取叠加。
 
 TianziFinalBlade:
   Name: 终绝的一剑
   Description: |-
     造成 {Damage} 点伤害。
-    该敌人每失去 6% 生命值，{SelfName}的伤害就额外提高该敌人最大生命值 {Value1}% 的伤害。
+    该敌人每失去 |n:6|% 生命值，{SelfName}的伤害就额外提高该敌人最大生命值 {Value1}% 的伤害。
 
 TianziHardshipFirst:
   Name: 先忧后乐之剑
@@ -394,8 +380,8 @@ TianziWorldCleaver:
   Name: 乾坤一掷
   Description: |-
     消耗全部费用（X）。选择丢弃与消耗费用相等数量的手牌。
-    每丢弃|1|张牌触发|1|次：攻击获得|1|点|火力|；防御获得|1|点|灵力|；
-    技能获得{Mana}；能力、厄运与状态则|放逐|这张牌，并额外随机|放逐|弃牌堆中的|1|张厄运或状态。
+    每丢弃|n:1|张牌触发|n:1|次：攻击获得|n:1|点|火力|；防御获得|n:1|点|灵力|；
+    技能获得{Mana}；能力、厄运与状态则|放逐|这张牌，并额外随机|放逐|弃牌堆中的|n:1|张厄运或状态。
     返还超出可弃手牌数量的{Mana2}。然后抽取等量的牌。
 
 TianziScarletApocalypse:
@@ -408,10 +394,10 @@ TianziScarletApocalypse:
 TianziFinalJudgement:
   Name: 极彩辐光
   Description: |-
-    {PlayerName}在自己的回合内获得{Mana}时，对所有敌人造成其最大生命值 1% 的伤害。
+    {PlayerName}在自己的回合内获得{Mana}时，对所有敌人造成其最大生命值 |n:1|% 的伤害。
     将一张|生机|加入手牌。
   UpgradedDescription: |-
-    {PlayerName}在自己的回合内获得{Mana}时，对所有敌人造成其最大生命值 1% 的伤害。
+    {PlayerName}在自己的回合内获得{Mana}时，对所有敌人造成其最大生命值 |n:1|% 的伤害。
     将一张|幻虹|加入手牌。
 
 TianziHeavenCreation:
@@ -422,12 +408,12 @@ TianziHeavenCreation:
 
 TianziRainbowAura:
   Name: 虹彩气息
-  Description: 根据{PlayerName}的基础法力颜色种类，各获得|2|点法力。
+  Description: 根据{PlayerName}的基础法力颜色种类，各获得|n:2|点法力。
 
 TianziHeavenRoam:
   Name: 天界漫游
   Description: |-
-    选择一张手牌|放逐|，抽|1|张牌。
+    选择一张手牌|放逐|，抽|n:1|张牌。
     {PlayerName}每打出 {Value1} 张牌，{SelfName}就从弃牌堆回到手中。
     |初见|：将一张|光芒|加入手中。
 
@@ -440,14 +426,14 @@ TianziHeavenMirror:
 TianziPeachTalisman:
   Name: 桃符「固若金汤的仙桃」
   Description: |-
-    获得|1|回合|天衣无缝|和 {Value1} 点|绝壁|。
-    每4个自然回合获得1层|天衣无缝|。
+    获得|n:1|回合|天衣无缝|和 {Value1} 点|绝壁|。
+    每4个自然回合获得|n:1|层|天衣无缝|。
   FlavorText: 桃符贴在门框上，连天狗的团扇都敲不开。
 
 TianziMortalJourney:
   Name: 凡间之游
   Description: |-
-    {PlayerName}每打出 {Value1} 张牌，获得{Mana}并抽|1|张牌。
+    {PlayerName}每打出 {Value1} 张牌，获得{Mana}并抽|n:1|张牌。
     此能力无法叠加。
   FlavorText: 下凡一趟，她学会了凡人的节奏：走几步，歇一歇。
 
@@ -503,32 +489,32 @@ TianziKarmaCurseChoice:
 TianziIkuFriend:
   Name: 龙宫使者衣玖
   Description: "{FriendP}|占卜| {Scry}。直到自己的回合开始之前获得 {Value2} 层|带电|。"
-  ExtraDescription1: "{FriendA}获得|1|回合|天衣无缝|。"
+  ExtraDescription1: "{FriendA}获得|n:1|回合|天衣无缝|。"
 
 TianziShrugIgnore:
   Name: 耸肩无视
   Description: |-
     获得 {Block} 点|格挡|。
-    本回合内，{PlayerName}受到伤害时获得|1|点|格挡|。此效果不可叠加，回合结束时消失。
+    本回合内，{PlayerName}受到伤害时获得|n:1|点|格挡|。此效果不可叠加，回合结束时消失。
 
 TianziBlueMeditation:
   Name: 冥想
   Description: |-
     将一张|水花|加入手中。
-    手牌张数为奇数时，抽|1|张牌。
-    手牌张数为偶数时，选择|1|张手牌|放逐|。
+    手牌张数为奇数时，抽|n:1|张牌。
+    手牌张数为偶数时，选择|n:1|张手牌|放逐|。
   ExtraDescription1: |-
     将一张|水花|加入手中。
-    手牌张数为奇数时，抽|1|张牌。
-    |d:手牌张数为偶数时，选择|1|张手牌放逐。|
+    手牌张数为奇数时，抽|n:1|张牌。
+    |d:手牌张数为偶数时，选择|n:1|张手牌放逐。|
   ExtraDescription2: |-
     将一张|水花|加入手中。
-    |d:手牌张数为奇数时，抽|1|张牌。|
-    手牌张数为偶数时，选择|1|张手牌|放逐|。
+    |d:手牌张数为奇数时，抽|n:1|张牌。|
+    手牌张数为偶数时，选择|n:1|张手牌|放逐|。
 
 TianziTemperamentProbe:
   Name: 气质探查
-  Description: '{PlayerName}在回合内每打出1张具有|奇偶数|的牌，抽|1|张牌。'
+  Description: '{PlayerName}在回合内每打出1张具有|奇偶数|的牌，抽|n:1|张牌。'
 
 TianziEarthStone:
   Name: 灵想「镇守大地之石」
@@ -538,14 +524,14 @@ TianziEarthStone:
 
 TianziFeast:
   Name: 庆功宴
-  Description: 每当一名敌人被打败，恢复|2|点生命值，获得{Mana}，抽一张牌。
+  Description: 每当一名敌人被打败，恢复|n:2|点生命值，获得{Mana}，抽|n:1|张牌。
 
 
 TianziPeachMake:
   Name: 仙桃制成
   Description: |-
-    失去|3|点|绝壁|。若没有|绝壁|则不生效。
-    恢复|2|点生命值，获得|2|点<sprite="Point" name="Power">，获得{Mana}，抽 {Value1} 张牌。
+    失去|n:3|点|绝壁|。若没有|绝壁|则不生效。
+    恢复|n:2|点生命值，获得|n:2|点<sprite="Point" name="Power">，获得{Mana}，抽 {Value1} 张牌。
 
 TianziDomainDuel:
   Name: 境界对决
@@ -558,7 +544,7 @@ TianziHeavenDoor:
     根据|升级|的牌：
     攻击则将其复制加入手中，费用为 0，具有|放逐|、|虚无|；
     防御则获得 {Value2} 点|格挡|；
-    技能则抽二张牌。
+    技能则抽|n:2|张牌。
 
 TianziAyaNewsSp:
   Name: 《文文新闻》天子特刊
